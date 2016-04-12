@@ -1,0 +1,6 @@
+{% assign meeting = false %}
+{% for m in site.meetings %}
+  {% if m.meeting == page.meeting %}
+    {% assign meeting = m %}
+  {% endif %}
+{% endfor %}

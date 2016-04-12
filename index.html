@@ -4,20 +4,70 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1>
+    <span class="ib">Cambridgeshire Area Meeting</span>
+    <small class="ib"> of the Religious Society of Friends (Quakers)</small>
+  </h1>
+  <div class="row">
+    <div class="col-sm-8 col-xs-12 pad-y-lg">
+      <h2 class="h3">Welcome</h2>
+      <p>
+        This is the website for the
+        <b>Cambridgeshire Area Meeting</b>
+        of the Religious Society of Friends (Quakers) in Britain.
+      </p>
+      <p>
+        The <b>Area Meeting</b> brings together <b>eight Local Meetings</b>
+        in Cambridgeshire (listed below),
+        and gathers several times a year.
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        Area Meetings are the "primary meeting for church affairs", and we meet
+        to discuss matters of common concern,
+        to share our successes and challenges,
+        to build a welcoming community beyond the Local Meeting
+        and to connect us with the wider family of Friends.
+      </p>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+      <h2 class="h4">Local Quaker Meetings in Cambridgeshire</h2>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      <p>
+        Each of the meetings in Cambridgeshire meet on Sunday mornings.
+        Some also have regular Meetings for Worship at other times during the week.
+        Click on the name of the meeting for more details,
+        including directions,
+        accessibility information
+        and arrangements for children.
+      </p>
 
+      <div class="xs-expand">
+        {% for meeting in site.meetings %}
+          <div class="pad-y-sm">
+          <a class="block pad-lg bg-success" href="{{ meeting.url | prepend: site.baseurl }}">
+            <i class="glyphicon glyphicon-chevron-right pull-right pad-y-sm"></i>
+            <strong>
+              {{ meeting.prefix }}
+              {{ meeting.title }}
+            </strong> Local Quaker Meeting
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+
+      <h2 class="h4">Area Meeting Business</h2>
+
+      <p>
+        Cambridgeshire Area Meeting <b>minutes</b>, <b>reports</b>, and other documents can be found
+        <a href='#' target="_blank">here</a>.
+      </p>
+
+    </div>
+
+    <div class="col-xs-12 col-sm-4 pad-lg">
+      <div class="xs-expand">
+        <h2 class="h3 hidden-xs">Events</h2>
+        {% include eventlist.html events=site.events %}
+        <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      </div>
+    </div>
+  </div>
 </div>

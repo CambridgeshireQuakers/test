@@ -1,0 +1,27 @@
+<section class="pad-lg bg-success xs-expand">
+  <h3>{% if page == meeting %}Find us{% else %}Finding {{ meeting.shortTitle }}{% endif%}</h3>
+  <dl>
+    <dt>Address</dt>
+    <dd>
+      <address itemprop="address">{{ meeting.address }}</address>
+    </dd>
+    {% if meeting.email %}
+      <dt>Email</dt>
+      <dd>
+        <a class="block" href="mailto:{{ page.email | strip }}">{{ meeting.email | strip }}</a>
+      </dd>
+    {% endif %}
+    {% if meeting.telephone %}
+      <dt>Telephone</dt>
+      <dd>
+        <span itemprop="telephone">{{ meeting.telephone | strip }}</span>
+      </dd>
+    {% endif %}
+    {% if page == meeting and meeting.regularMeetings.size > 0 %}
+      <dt>Meetings for Worship</dt>
+      {% for m in meeting.regularMeetings %}
+        <dd>{{ m }}</dd>
+      {% endfor %}
+    {% endif %}
+  </dl>
+</section>

@@ -1,0 +1,46 @@
+---
+# This layout is for meetings and pages about the meeting community.
+#
+# It’s not suitable for events or pages like room hire pages which may need the
+# full width of the page (and are not targeted at enquirers/visitors/attenders).
+#
+# The page content will be shown on the left and the meeting contact details and
+# a list of upcoming events on the right.
+#
+# Microdata:
+#
+# If the page is the meeting page itself, then the page will be tagged
+# as a place of worship.
+#
+# Additionally, if the page has a true eventVenue flag (i.e. it is a meeting
+# house), the page will be tagged as an Event Venue.
+
+layout: default
+---
+{% include assign-meeting %}
+
+<article
+  class="clearfix"
+  {% if page == meeting %}itemscope itemtype="https://schema.org/PlaceOfWorship"{% endif %}
+  {% if page.eventVenue %}additionalType="https://schema.org/EventVenue"{% endif %}>
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}{% if page == meeting %} <small class="ib">Quaker Meeting</small>{% endif %}</h1>
+  </header>
+
+  <div class="row">
+    <div class="pull-right col-xs-12 col-sm-4">
+      {% include meeting-contact.html %}
+    </div>
+    <div class="col-xs-12 col-sm-8 content-body">
+      {{ content }}
+    </div>
+
+    <div class="pull-right col-xs-12 col-sm-4">
+      <div class="xs-expand">
+        {% include eventlist.html events=site.events meeting=page.meeting %}
+      </div>
+    </div>
+  </div>
+
+</article>

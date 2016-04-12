@@ -1,0 +1,14 @@
+{% for fallback in site.fallbacks %}
+  {% if include.k == fallback[0] %}
+    {% for fallbackTo in fallback %}
+      {% if include.o[fallbackTo] != nil %}
+        {{ include.o[fallbackTo] }}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    {% break %}
+  {% endif %}
+  {% if forloop.last %}
+    {{ include.o[include.k] }}
+  {% endif %}
+{% endfor %}

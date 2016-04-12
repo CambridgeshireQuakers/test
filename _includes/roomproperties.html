@@ -1,0 +1,7 @@
+{% assign r=include.room%}
+
+<dl class="dl-horizontal">
+  {% if r.capacity    %}<dt>Capacity:</dt>     <dd>{{ r.capacity }}</dd>{% endif %}
+  {% if r.levelAccess %}<dt>Level Access:</dt> <dd>{{ r.levelAccess }}</dd>{% endif %}
+  {% if r.dimensions  %}<dt>Dimensions:</dt>   <dd>{{ r.dimensions }}</dd>{% endif %}
+</dl>

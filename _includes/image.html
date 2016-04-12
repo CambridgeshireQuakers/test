@@ -1,0 +1,8 @@
+<figure class="thumbnail {{ include.class }}">
+  <img src="{{ site.baseurl }}{{ include.src }}" alt="{{ include.alt }}"/>
+  {% if include.caption %}
+    <figcaption class="caption">
+      {{ include.caption }}
+    </figcaption>
+  {% endif %}
+</figure>

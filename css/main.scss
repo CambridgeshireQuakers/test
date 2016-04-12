@@ -3,51 +3,252 @@
 ---
 @charset "utf-8";
 
+/* Path to glyphicons */
+$icon-font-path: "/ext-lib/bootstrap-sass/assets/fonts/bootstrap/";
 
+/* Custom variables */
 
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+//
+$font-family-sans-serif:  "Univers", "U001", "Roboto", "Helvetica Neue", "Nimbus Sans L", "Arial", sans-serif !default;
+$font-family-serif:       "Serifa", "Roboto Slab", "Rockwell", "Bitstream Charter", "Georgia", serif !default;
+$headings-font-family:    "Serifa", "Roboto Slab", "Rockwell", "Bitstream Charter", $font-family-sans-serif;
 
-$spacing-unit:     30px;
+/* Commented-out: used to check typography is acceptable on systems with few fonts */
+//$font-family-sans-serif:  "Arial", sans-serif !default;
+//$font-family-serif:       "Times New Roman", serif !default;
+//$headings-font-family:    "Times New Roman", sans-serif !default;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+/* Larger base font size */
+$font-size-base: 16px;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+/* Larger line heights */
+$line-height-base:  1.618 !default; // golden ratio happens to look ok.
+$line-height-large: 1.699 !default;
+$line-height-small: 1.510 !default;
 
-// Width of the content area
-$content-width:    800px;
+$brand-primary: #4591C1 !default; // Blue
+$brand-success: #0E8167 !default; // Green
+$brand-info:    #765A96 !default; // Purple
+$brand-warning: #EBBF59 !default; // Mustard
+$brand-danger:  #BB506E !default; // Red
 
-$on-palm:          600px;
-$on-laptop:        800px;
+$state-primary-bg: $brand-primary !default;
+$state-success-bg: $brand-success !default;
+$state-info-bg:    $brand-info    !default;
+$state-warning-bg: $brand-warning !default;
+$state-danger-bg:  $brand-danger  !default;
 
+$blockquote-font-size: $font-size-base;
+$border-radius-base:  2px;
+$border-radius-large: 2px;
+$border-radius-small: 2px;
 
+/* any style customization must be before the bootstrap import */
+@import "bootstrap";
 
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+.block { display: block; }
+address, .ib { display: inline-block; }
+address, .pre-wrap { white-space: pre-wrap; }
+address { margin-bottom: 0; }
+
+section { margin-bottom: 1em; }
+
+body>footer {
+  margin-bottom: 0 !important;
+  margin-top:    $padding-large-vertical !important;
+  position: fixed;
+  bottom: 0;
+}
+
+.content-body {
+  min-height: 20em
+}
+
+a[href^=mailto] {
+  word-break: break-all;
+}
+
+.thumbnail {
+  border: none;
+}
+
+.thumbnail > .caption {
+  border-bottom: 0.375em solid $gray-lighter;
+}
+
+.thumbnail-left {
+  margin-right: $padding-large-horizontal;
+  float: left;
+  max-width: 33%;
+}
+.thumbnail-right {
+  margin-left: $padding-large-horizontal;
+  float: right;
+  max-width: 33%;
+}
+
+@media (max-width: $screen-xs-max) {
+  .content-body {
+    min-height: 2em;
+  }
+  .xs-expand {
+    margin-left:  -$padding-large-horizontal;
+    margin-right: -$padding-large-horizontal;
+  }
+  .thumbnail-left {
+    float: none;
+    max-width: 100%;
+    margin-left:  0;
+    margin-right: 0;
+  }
+}
+
+dl {
+  margin-bottom: 0;
+}
+
+.bg-primary,
+.bg-success,
+.bg-danger,
+.bg-warning,
+.bg-info,
+.text-white {
+  color: #fff;
+  & a,
+  & a:link,
+  & a:hover,
+  & a:visited,
+  & a:active {
+    color: #fff;
+  }
+}
+
+a.bg-primary,
+a.bg-success,
+a.bg-danger,
+a.bg-warning,
+a.bg-info {
+  &, &:link, &:visited, &:hover, &:active {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  &:first-child {
+    margin-top: 0px;
+  }
+}
+
+.pad-xs, .pad-y-xs {
+  padding-top:    $padding-xs-vertical;
+  padding-bottom: $padding-xs-vertical;
+}
+
+.pad-xs, .pad-x-xs {
+  padding-left:  $padding-xs-horizontal;
+  padding-right: $padding-xs-horizontal;
+}
+
+.pad-sm, .pad-y-sm {
+  padding-top:    $padding-small-vertical;
+  padding-bottom: $padding-small-vertical;
+}
+
+.pad-sm, .pad-x-sm {
+  padding-left:  $padding-small-horizontal;
+  padding-right: $padding-small-horizontal;
+}
+
+.pad-md, .pad-y-md {
+  padding-top:    $padding-base-vertical;
+  padding-bottom: $padding-base-vertical;
+}
+
+.pad-md, .pad-x-md {
+  padding-left:  $padding-base-horizontal;
+  padding-right: $padding-base-horizontal;
+}
+
+.pad-lg, .pad-y-lg {
+  padding-top:    $padding-large-vertical;
+  padding-bottom: $padding-large-vertical;
+}
+
+.pad-lg, .pad-x-lg {
+  padding-left:  $padding-large-horizontal;
+  padding-right: $padding-large-horizontal;
 }
 
 
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+.margin-xs, .margin-y-xs {
+  margin-top:    $padding-xs-vertical;
+  margin-bottom: $padding-xs-vertical;
+}
+
+.margin-xs, .margin-x-xs {
+  margin-left:  $padding-xs-horizontal;
+  margin-right: $padding-xs-horizontal;
+}
+
+.margin-sm, .margin-y-sm {
+  margin-top:    $padding-small-vertical;
+  margin-bottom: $padding-small-vertical;
+}
+
+.margin-sm, .margin-x-sm {
+  margin-left:  $padding-small-horizontal;
+  margin-right: $padding-small-horizontal;
+}
+
+.margin-md, .margin-y-md {
+  margin-top:    $padding-base-vertical;
+  margin-bottom: $padding-base-vertical;
+}
+
+.margin-md, .margin-x-md {
+  margin-left:  $padding-base-horizontal;
+  margin-right: $padding-base-horizontal;
+}
+
+.margin-lg, .margin-y-lg {
+  margin-top:    $padding-large-vertical;
+  margin-bottom: $padding-large-vertical;
+}
+
+.margin-lg, .margin-x-lg {
+  margin-left:  $padding-large-horizontal;
+  margin-right: $padding-large-horizontal;
+}
+
+/* This skeletal view is useful for concentrating discussion on the layout */
+
+@if 0==0 {
+  *:not(.glyphicon) {
+    font-family: 'Comic Sans MS' !important;
+    color: #666 !important;
+    background-color: #fff !important;
+    border-color: #666 !important;
+    text-shadow: none;
+    box-shadow: none;
+  }
+
+  a:link,
+  a:visited,
+  a:active,
+  a:link *,
+  a:visited *,
+  a:active *,
+  button {
+    color: #49c !important;
+    border-color: #49c !important;
+  }
+
+  .bg-primary,
+  .bg-success,
+  .bg-danger,
+  .bg-warning,
+  .bg-info { border: 1px solid; }
+}

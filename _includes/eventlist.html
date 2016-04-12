@@ -1,0 +1,21 @@
+<aside class="event-list">
+  {% for event in include.events %}
+    {% if include.meeting == nil or include.meeting == event.meeting %}
+      {% if event.date > site.time %}
+        <div class="content">
+          <a
+            href="{{ event.url }}"
+            class="bg-danger block pad-md"
+            itemscope itemtype="https://schema.org/Event">
+            <h3>{% include accessor o=event k='shortTitle' %}</h3>
+            <p>
+              <time datetime="{{ event.date | date_to_xmlschema }}" itemprop="startDate">
+                {{ event.date | date: "%A, %-d %B %Y" }}
+              </time>
+            </p>
+          </a>
+        </div>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</aside>
