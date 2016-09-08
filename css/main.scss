@@ -43,8 +43,9 @@ $border-radius-base:  2px;
 $border-radius-large: 2px;
 $border-radius-small: 2px;
 
-/* any style customization must be before the bootstrap import */
+/* Customization of variables etc must be before the bootstrap import */
 @import "bootstrap";
+/* Additional more specific styles etc should follow the bootstrap import */
 
 .block { display: block; }
 address, .ib { display: inline-block; }
@@ -223,9 +224,9 @@ h1, h2, h3, h4, h5, h6,
   margin-right: $padding-large-horizontal;
 }
 
-/* This skeletal view is useful for concentrating discussion on the layout */
+/* This skeletal view is useful for concentrating discussion on the layout during a design phase */
 
-@if 0==0 {
+@if 0==1 {
   *:not(.glyphicon) {
     font-family: 'Comic Sans MS' !important;
     color: #666 !important;
