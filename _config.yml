@@ -27,7 +27,7 @@ title: Cambridgeshire Quakers
 
 email: info@cambridgeshire-quakers.org.uk
 
-description: > # this angle-bracket means to ignore newlines in this block
+description: > # this angle-bracket means to treat newlines in this block as spaces
   Cambridgeshire Area Quaker Meeting brings together Friends from Local Meetings
   in Cambridge, Ely, Huntingdon, Peterborough, St Neots and Wisbech. We are part
   of Britain Yearly Meeting of the Religious Society of Friends (Quakers).
