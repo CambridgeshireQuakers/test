@@ -26,6 +26,7 @@ $line-height-base:  1.618 !default; // golden ratio happens to look ok.
 $line-height-large: 1.699 !default;
 $line-height-small: 1.510 !default;
 
+/* Define 'branding' colours. Palette taken from quaker.org.uk */
 $brand-primary: #4591C1 !default; // Blue
 $brand-success: #0E8167 !default; // Green
 $brand-info:    #765A96 !default; // Purple
@@ -59,10 +60,12 @@ body>footer {
   margin-top: $padding-large-vertical !important;
 }
 
+/* The footer looks strange if the page is really short */
 .content-body {
   min-height: 20em
 }
 
+/* Email links should not */
 a[href^=mailto] {
   word-break: break-all;
 }
@@ -106,6 +109,8 @@ dl {
   margin-bottom: 0;
 }
 
+/* In reversed out context, links should be white */
+
 .bg-primary,
 .bg-success,
 .bg-danger,
@@ -133,12 +138,16 @@ a.bg-info {
   }
 }
 
+/* Headings at the beginning of articles etc should not have top margin */
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   &:first-child {
     margin-top: 0px;
   }
 }
+
+/* Some utility classes for setting padding */
 
 .pad-xs, .pad-y-xs {
   padding-top:    $padding-xs-vertical;
@@ -180,7 +189,7 @@ h1, h2, h3, h4, h5, h6,
   padding-right: $padding-large-horizontal;
 }
 
-
+/* Some utility classes for setting margin */
 
 .margin-xs, .margin-y-xs {
   margin-top:    $padding-xs-vertical;
