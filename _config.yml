@@ -36,6 +36,8 @@ url: "http://cambridgeshire-quakers.org.uk" # the base hostname & protocol for y
 
 baseurl: "" # the subpath of your site, e.g. /blog.
 
+noindex: true
+
 # ------------------------------------------------------------------------------
 # Build settings
 # This ensures all the nuts and bolts in the site fit together nicely.
