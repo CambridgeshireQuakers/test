@@ -10,7 +10,7 @@ address: |
 email: clerk@ely.cambridgeshire-quakers.org.uk
 ---
 
-The Ely Meeting is a relatively new community. It was restarted in 2008?, and met initially in the Library of the Cathedral. We now meet in the Old Dispensary on St Mary’s Street from 1030-1130am on Sundays.
+The Ely Meeting is a relatively new community. It was restarted in 2007, and met initially in the Museum, and after two other venues, we now meet in the Old Dispensary on St Mary’s Street from 1030-1130am on Sundays.
 
 Our Meetings for Worship, attended by twelve on a typical Sunday, are more often than not silent, which seems to suit us. We have an opportunity at the end of that silence to share thoughts and concerns which Friends thought not necessarily appropriate for ministry but which give us valuable food for thought in the days that follow.
 
