@@ -14,14 +14,21 @@
         </button>
         <div class="collapse navbar-collapse" id="navbar-collapsible">
           <ul class="nav navbar-nav">
-            <li>
-              <a href="{{ site.baseurl }}/">{{ site.title }}</a>
-            </li>
+            {% if showTitleInNav %}
+              <li>
+                <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+              </li>
+            {% endif %}
             {% for c in site.collections %}
-              {% if c.output and c.docs.size > 0 %}
+              {% if c.includeHomePage or c.output and c.docs.size > 0 %}
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ c.name }} <span class="caret"></span></a>
                   <ul class="dropdown-menu">
+                    {% if c.includeHomePage %}
+                      <li>
+                        <a href="{{ site.baseurl }}/">{{ c.includeHomePage }}</a>
+                      </li>
+                    {% endif %}
                     {% for d in c.docs %}
                       {% if d.date == nil or d.date > site.time %}
                         <li>

@@ -63,8 +63,12 @@ future: true
 # don't remove that one.
 
 collections:
+  am:
+    name: Cambridgeshire Quakers
+    output: true
+    includeHomePage: Home
   meetings:
-    name: Meetings
+    name: Local Meetings
     output: true
   concerns:
     name: Concerns
@@ -74,7 +78,9 @@ collections:
     output: false
   events:
     name: Events
-    output: true
+    output: false
+
+showTitleInNav: false
 
 # defaults
 #
@@ -93,6 +99,11 @@ defaults:
       layout: meeting
       regularMeetings:
         - Sundays 1030-1130
+  -
+    scope:
+      type: concerns
+    values:
+      layout: page
   -
     scope:
       type: concerns
