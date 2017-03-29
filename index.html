@@ -65,8 +65,7 @@ layout: default
     <div class="col-xs-12 col-sm-4 pad-lg">
       <div class="xs-expand">
         <h2 class="h3 hidden-xs">Events</h2>
-        {% include eventlist.html events=site.events %}
-        <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+        {% include google-calendar-sidebar.html calendarId=site.calendarId %}
       </div>
     </div>
   </div>

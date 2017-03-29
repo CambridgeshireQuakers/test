@@ -38,6 +38,7 @@ baseurl: "" # the subpath of your site, e.g. /blog.
 
 noindex: true
 
+calendarId: cambridgeshire-quakers.org.uk_pfnk20251chvstmqmqkvub1i20@group.calendar.google.com
 # ------------------------------------------------------------------------------
 # Build settings
 # This ensures all the nuts and bolts in the site fit together nicely.

@@ -14,6 +14,7 @@ regularMeetings:
   - Sundays 1030-1130
   - Wednesdays 1315-1345
 eventVenue: true
+calendarId: cambridgeshire-quakers.org.uk_ftjtuuilhpv07kd4ujo03o0ghg@group.calendar.google.com
 ---
 
 Jesus Lane is a busy meeting, which often has 50-60 Friends gathered on Sundays, meeting from 1030-1130am. We have [family-friendly arrangements](/meetings/jesus-lane/childrens-meeting.html) for Sunday worship.

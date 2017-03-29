@@ -38,7 +38,7 @@ layout: default
 
     <div class="pull-right col-xs-12 col-sm-4">
       <div class="xs-expand">
-        {% include eventlist.html events=site.events meeting=page.meeting %}
+        {% include google-calendar-sidebar.html calendarId=meeting.calendarId meeting=page.meeting %}
       </div>
     </div>
   </div>
