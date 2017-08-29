@@ -57,7 +57,7 @@ guidelines, is available on the ground floor.  A
 transit wheelchair is available.
 
 There are hearing induction loops in the Meeting
-Room and the Ann Docwra Room.
+Room and the Ann Docwra Room (on request).
 
 ### Baby-changing
 
@@ -79,6 +79,7 @@ The following equipment is available at the Meeting House. Please reserve when y
 - Overhead projector
 - Projection screens
 - Flipchart/whiteboard stand
+- Piano
 
 ### Wi-fi
 
@@ -88,9 +89,7 @@ in advance.
 
 ## Rates
 
-Rates are kept to the minimum necessary
-to meet the day-to-day running costs of the
-Meeting House.
+These rates are effective from 1 July 2017 to 30 June 2018. They are subject to periodic review.
 
 ##### Room Rates
 
@@ -98,13 +97,13 @@ Meeting House.
 
 | Room | Evening & weekends <br/> 3 hour session | Evening & weekends <br/> Each additional hour | Daytime <br/> Hourly rate |
 |--------------------------|-------:|-------:|-------:|
-| Meeting Room             | £53.50 | £ 9.90 | £18.00 |
-| Meeting Room with Annexe | £65.75 | £12.25 | £22.25 |
-| Ann Docwra Room          | £37.75 | £ 6.90 | £14.25 |
-| Aldren Wright Room       | £29.60 | £ 5.30 | £11.10 |
-| Annexe                   | £27.00 | £ 5.30 | £ 9.70 |
-| Caroline Stephen Room    | £25.00 | £ 4.80 | £ 9.20 |
-| Library                  | £14.25 | £ 2.65 | £ 5.00 |
+| Meeting Room             | £55.10 | £10.20 | £18.50 |
+| Meeting Room with Annexe | £65.70 | £12.60 | £22.95 |
+| Ann Docwra Room          | £39.00 | £ 7.10 | £14.70 |
+| Aldren Wright Room       | £30.50 | £ 5.50 | £11.50 |
+| Annexe                   | £28.00 | £ 5.50 | £10.00 |
+| Caroline Stephen Room    | £25.00 | £ 5.00 | £ 9.50 |
+| Library                  | £14.75 | £ 2.75 | £ 5.15 |
 
 </div>
 
@@ -114,15 +113,15 @@ Meeting House.
 
 Use of Kitchen |
 --|
-Tea or coffee once                                      | £5.30
-Tea or coffee more than once                            | £10.60
-Serving a prepared meal and tea or coffee               | £10.60
-Cooking and serving a meal and tea or coffee throughout | £21.50
-Tea/coffee provided                                     | £1 per serving
+Tea or coffee once                                      | £5.60
+Tea or coffee more than once                            | £10.90
+Serving a prepared meal and tea or coffee               | £10.90
+Cooking and serving a meal and tea or coffee throughout | £22.15
+Tea/coffee provided                                     | £1.50 per serving
 
 Other |
 --|
-Hire of digital projector | £5.25
+Hire of digital projector | £5.50
 
 </div>
 
